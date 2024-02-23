@@ -1,0 +1,19 @@
+@import "mixins";
+
+//Variables
+$hero-bg-image: "../images/hero-bg.png";
+
+// Mixin for background image
+@mixin background-image($image) {
+  background-image: url("#{$image}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
