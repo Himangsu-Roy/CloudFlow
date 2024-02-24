@@ -4,20 +4,149 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CloudFlow</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <img src="" alt="logo" />
-      <nav></nav>
-      <div>
-        <img src="" alt="" />
-        <div>
-          <small></small>
-          <h4></h4>
-        </div>
+    <header class="header">
+      <div class="container-size px-3">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid px-0">
+            <!-- Logo -->
+            <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+            <a class="navbar-brand logo-name me-0" href="#">CloudFlow</a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbars navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li> -->
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link p-0" href="#"><small>Home</small></a>
+                  <div class="align-self-end">
+                    <img
+                      src="./assets/images/down_arrow.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link p-0" href="#"><small>About Us</small></a>
+                  <div class="align-self-end">
+                    <img
+                      src="./assets/images/down_arrow.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link p-0" href="#"><small>Services</small></a>
+                  <div class="align-self-end">
+                    <img
+                      src="./assets/images/down_arrow.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link p-0" href="#"><small>Projects</small></a>
+                  <div class="align-self-end">
+                    <img
+                      src="./assets/images/down_arrow.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link p-0" href="#"><small>Blog</small></a>
+                  <div class="align-self-end">
+                    <img
+                      src="./assets/images/down_arrow.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link p-0" href="#"><small>Page</small></a>
+                  <div class="align-self-end">
+                    <img
+                      src="./assets/images/down_arrow.svg"
+                      alt="down_arrow"
+                    />
+                  </div>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link p-0" href="#"><small>Contact</small></a>
+                </li>
+
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+              <div class="d-flex align-items-center phone" role="search">
+                <!-- <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button> -->
+                <div class="phone-icon">
+                  <img
+                    class="w-100 h-100"
+                    src="./assets/images/phone.svg"
+                    alt="phone"
+                  />
+                </div>
+                <div class="ps-3">
+                  <small class="fw-medium">Need help?</small>
+                  <h5 class="m-0">(808) 555-0111</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main></main>
     <footer></footer>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

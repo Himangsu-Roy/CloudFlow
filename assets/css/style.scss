@@ -1,6 +1,12 @@
-@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&display=swap");
 
 //Variables
+$dm-sans: "DM Sans", sans-serif;
+$lexend-deca: "Lexend Deca", sans-serif;
+$primary: #140b43;
+$secondary: #514a74;
+$container: 1170px;
+
 $hero-bg-image: "../images/hero-bg.png";
 
 // Mixin for background image
@@ -17,3 +23,59 @@ $hero-bg-image: "../images/hero-bg.png";
   box-sizing: border-box;
 }
 
+body {
+  font-family: $lexend-deca;
+}
+
+.header {
+  .container-size {
+    width: $container;
+    margin: 0 auto;
+
+    .logo {
+      width: 37px;
+      height: 92px;
+    }
+    .logo-name {
+      margin-left: 8px;
+      font-size: 26px;
+      font-weight: 500;
+      color: $primary;
+    }
+
+    .navbars {
+      .phone {
+        img {
+          background-color: #140b43;
+          border-radius: 100%;
+          padding: 15px;
+
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        h5 {
+          font-family: $dm-sans;
+          letter-spacing: -1px;
+          font-weight: 600;
+        }
+      }
+
+      ul {
+        li {
+          a {
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            color: $primary;
+            margin-right: 5px;
+
+            &:nth-last-child(1) {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
